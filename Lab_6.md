@@ -41,3 +41,25 @@ int main() {
     return 0;
 }
 ```
+# Problem 3
+**(Note: write buildQueue() function in the class as done in the previous lecture. )**
+### Task:
+Make additions to the class written in **Problem 2** above so that the following program works correctly.
+
+```cpp
+int main() {
+    int arr[15];
+    for (int i = 0; i < 15; ++i) {
+        arr[i] = i;
+    }
+
+    maxPQ pq1(arr);
+    pq1.print();
+    cout << pq1.max() << endl;
+    pq1.dequeue();
+    pq1.print();
+    cout << pq1.max() << endl;
+    pq1.dequeue();
+    pq1.print();
+    return 0;
+}
